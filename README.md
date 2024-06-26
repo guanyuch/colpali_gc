@@ -10,7 +10,7 @@ tags:
 
 ColPali is a model based on a novel model architecture and training strategy based on Vision Language Models (VLMs) to efficiently index documents from their visual features.
 It is a [PaliGemma-3B](https://huggingface.co/google/paligemma-3b-mix-448) extension that generates [ColBERT](https://arxiv.org/abs/2004.12832)- style multi-vector representations of text and images. 
-It was introduced in the paper [ColPali: Efficient Document Retrieval with Vision Language Models[LINK]]() and first released in [this repository](https://github.com/ManuelFay/colpali)
+It was introduced in the paper [ColPali: Efficient Document Retrieval with Vision Language Models[add link]]() and first released in [this repository](https://github.com/ManuelFay/colpali)
 
 ## Model Description
 
@@ -36,8 +36,12 @@ with `alpha=32`  and `r=32` on the transformer layers from the language model,
 as well as the final randomly initialized projection layer, and use a `paged_adamw_8bit` optimizer. 
 We train on an 8 GPU setup with data parallelism, a learning rate of 5e-5 with linear decay with 2.5% warmup steps, and a batch size of 32.
 
+## Intended uses
 
-## Intended uses & limitations
+#TODO
+
+## Limitations
+
  - **Focus**: The model primarily focuses on PDF-type documents and high-ressources languages, potentially limiting its generalization to other document types or less represented languages.
  - **Support**: The model relies on multi-vector retreiving derived from the ColBERT late interaction mechanism, which may require engineering efforts to adapt to widely used vector retrieval frameworks that lack native multi-vector support.
 
