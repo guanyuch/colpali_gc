@@ -127,5 +127,13 @@ ColPali based model (PaliGemma) is under `gemma` license as specified in its [mo
 If you use any datasets or models from this organization in your research, please cite the original dataset as follows:
 
 ```bibtex
-    [include BibTeX]
+    @misc{faysse2024colpaliefficientdocumentretrieval,
+      title={ColPali: Efficient Document Retrieval with Vision Language Models}, 
+      author={Manuel Faysse and Hugues Sibille and Tony Wu and Gautier Viaud and Céline Hudelot and Pierre Colombo},
+      year={2024},
+      eprint={2407.01449},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2407.01449}, 
+}
 ```
