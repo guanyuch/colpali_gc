@@ -38,8 +38,6 @@ We train on an 8 GPU setup with data parallelism, a learning rate of 5e-5 with l
 
 ## Usage
 
-An example usa
-
 ```python
 import torch
 import typer
