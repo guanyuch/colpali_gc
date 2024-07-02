@@ -14,8 +14,8 @@ It was introduced in the paper [ColPali: Efficient Document Retrieval with Visio
 
 ## Model Description
 
-This model is built iteratively starting from an off-the-shelf [Siglip](https://huggingface.co/google/siglip-so400m-patch14-384) model. 
-We finetuned it to create [BiSigLip](https://huggingface.co/vidore/bisiglip) and fed the patch-embeddings output by SigLip to an LLM, [PaliGemma-3B](https://huggingface.co/google/paligemma-3b-mix-448) to create [BiPali](https://huggingface.co/vidore/bipali). 
+This model is built iteratively starting from an off-the-shelf [SigLIP](https://huggingface.co/google/siglip-so400m-patch14-384) model. 
+We finetuned it to create [BiSigLIP](https://huggingface.co/vidore/bisiglip) and fed the patch-embeddings output by SigLIP to an LLM, [PaliGemma-3B](https://huggingface.co/google/paligemma-3b-mix-448) to create [BiPali](https://huggingface.co/vidore/bipali). 
 
 One benefit of inputting image patch embeddings through a language model is that they are natively mapped to a latent space similar to textual input (query). 
 This enables leveraging the [ColBERT](https://arxiv.org/abs/2004.12832) strategy to compute interactions between text tokens and image patches, which enables a step-change improvement in performance compared to BiPali. 
