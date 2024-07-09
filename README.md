@@ -1,4 +1,5 @@
 ---
+library: colpali
 license: mit
 language:
 - en
