@@ -2,7 +2,6 @@
 license: mit
 language:
 - en
-- fr
 tags:
 - vidore
 ---
