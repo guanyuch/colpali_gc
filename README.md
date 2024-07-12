@@ -1,5 +1,6 @@
 ---
 license: mit
+library_name: colpali
 language:
 - en
 tags:
