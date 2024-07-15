@@ -112,7 +112,7 @@ if __name__ == "__main__":
 
 ## License
 
-ColPali based model (PaliGemma) is under `gemma` license as specified in its [model card](https://huggingface.co/google/paligemma-3b-mix-448). The adapters attached to the model are under MIT license.
+ColPali's vision language backbone model (PaliGemma) is under `gemma` license as specified in its [model card](https://huggingface.co/google/paligemma-3b-mix-448). The adapters attached to the model are under MIT license.
 
 ## Contact
 
